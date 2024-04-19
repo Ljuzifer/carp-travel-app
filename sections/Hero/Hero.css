@@ -1,0 +1,7 @@
+.hero {
+    background-image: var(--overlay-50),
+        image-set(
+            url("/images/bg-hero-mob@1x.webp") 1x,
+            url("/images/bg-hero-mob@2x.webp") 2x
+        );
+}
