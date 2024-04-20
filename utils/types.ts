@@ -1,12 +1,12 @@
 // **** general ****
 
-export type subTitle = {
+export type SubTitle = {
     primary: string;
     secondary: string;
 };
 
-export type subTitleProps = {
-    caption: subTitle;
+export type SubTitleProps = {
+    caption: SubTitle;
     styles: string;
 };
 
@@ -22,7 +22,7 @@ export type MobileMenuProps = {
 
 export type HeroData = {
     mainTitle: string;
-    subTitle: subTitle;
+    subTitle: SubTitle;
     description: string;
     towns: string;
 };
@@ -41,9 +41,20 @@ export type AboutBanner = {
 };
 
 export type AboutData = {
-    subTitle: subTitle;
+    subTitle: SubTitle;
     description: AboutDescription[];
     banner: AboutBanner;
 };
 
 // **** offer ****
+
+export interface OfferDetails {
+    id: number;
+    bg: string;
+    image: string;
+    promo: string;
+    title: string;
+    text: string;
+}
+
+// **** benefits ****

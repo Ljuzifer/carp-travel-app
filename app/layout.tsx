@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "@/sections/Header/Header";
 import { Toaster } from "react-hot-toast";
+import Header from "@/sections/Header/Header";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
