@@ -18,6 +18,9 @@ const config: Config = {
 
             backgroundColor: {
                 "menu-background": "rgba(1, 10, 5, 0.75)",
+                "join-button": "rgba(255, 255, 255, 0.1)",
+                "join-btn-tablet": "rgba(255, 255, 255, 0.05)",
+                "join-btn-hover": "rgba(255, 255, 255, 0.2)",
             },
 
             backdropBlur: {

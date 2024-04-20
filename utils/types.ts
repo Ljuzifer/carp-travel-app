@@ -1,8 +1,13 @@
-// **** general data ****
+// **** general ****
 
 export type subTitle = {
     primary: string;
     secondary: string;
+};
+
+export type subTitleProps = {
+    caption: subTitle;
+    styles: string;
 };
 
 // **** header ****
@@ -20,3 +25,5 @@ export type HeroData = {
     description: string;
     towns: string;
 };
+
+// **** about ****

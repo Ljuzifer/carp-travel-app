@@ -1,20 +1,25 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import HeaderNavList from "@/components/HeaderNavList/HeaderNavList";
-import { useEffect, useState } from "react";
 import useMedia from "use-media";
+import HeaderNavList from "@/components/HeaderNavList/HeaderNavList";
 
 export default function Header() {
-    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const isMobile = useMedia({ maxWidth: "767px" });
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
     useEffect(() => {
-        if (!isMobile) {
-            setIsMenuOpen(true);
+        function handleResize() {
+            const mobile = window.matchMedia("(max-width: 767px)").matches;
+            setIsMenuOpen(!mobile);
         }
-    }, [isMobile]);
+
+        window.addEventListener("resize", handleResize);
+        handleResize();
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     useEffect(() => {
         if (isMobile && isMenuOpen) {
