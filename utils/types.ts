@@ -13,6 +13,7 @@ export type subTitleProps = {
 // **** header ****
 
 export type MobileMenuProps = {
+    screen: boolean;
     isMenuOpen: boolean;
     toggleMenu: () => void;
 };
@@ -27,3 +28,22 @@ export type HeroData = {
 };
 
 // **** about ****
+
+export type AboutDescription = {
+    primary: string;
+    secondary: string;
+};
+
+export type AboutBanner = {
+    from: string;
+    to: string;
+    offer: string;
+};
+
+export type AboutData = {
+    subTitle: subTitle;
+    description: AboutDescription[];
+    banner: AboutBanner;
+};
+
+// **** offer ****

@@ -5,7 +5,7 @@
     left: 0;
     width: 42px;
     height: 53px;
-    background-image: url("../../public/icons/mob-btn-bord-left.svg");
+    background-image: url("/icons/mob-btn-bord-left.svg");
     opacity: 1;
 }
 
@@ -13,7 +13,7 @@
     .join::before {
         width: 35px;
         height: 50px;
-        background-image: url("../../public/icons/tab-btn-bord-left.svg");
+        background-image: url("/icons/tab-btn-bord-left.svg");
     }
 }
 
@@ -21,7 +21,7 @@
     .join::before {
         width: 44px;
         height: 71px;
-        background-image: url("../../public/icons/desk-btn-bord-left.svg");
+        background-image: url("/icons/desk-btn-bord-left.svg");
     }
 }
 
@@ -32,7 +32,7 @@
     right: 0;
     width: 42px;
     height: 53px;
-    background-image: url("../../public/icons/mob-btn-bord-right.svg");
+    background-image: url("/icons/mob-btn-bord-right.svg");
     opacity: 1;
 }
 
@@ -40,7 +40,7 @@
     .join::after {
         width: 35px;
         height: 50px;
-        background-image: url("../../public/icons/tab-btn-bord-right.svg");
+        background-image: url("/icons/tab-btn-bord-right.svg");
     }
 }
 
@@ -48,6 +48,6 @@
     .join::after {
         width: 44px;
         height: 71px;
-        background-image: url("../../public/icons/desk-btn-bord-right.svg");
+        background-image: url("/icons/desk-btn-bord-right.svg");
     }
 }

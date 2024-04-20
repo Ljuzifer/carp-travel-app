@@ -41,7 +41,7 @@ export default function RootLayout({
     return (
         <html
             lang='en'
-            className='scroll-smooth'
+            // className='scroll-smooth'
             style={{ scrollBehavior: "smooth" }}>
             <body className={inter.className}>
                 <Header />

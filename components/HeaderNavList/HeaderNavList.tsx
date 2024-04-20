@@ -7,6 +7,7 @@ import { navigation } from "@/data/navigation";
 import "./HeaderNavList.css";
 
 export default function HeaderNavList({
+    screen,
     isMenuOpen,
     toggleMenu,
 }: MobileMenuProps) {
@@ -24,7 +25,7 @@ export default function HeaderNavList({
             transformOrigin: "bottom left",
         },
         config: {
-            duration: 888,
+            duration: screen ? 800 : 0,
         },
     });
 

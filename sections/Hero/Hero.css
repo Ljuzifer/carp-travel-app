@@ -4,16 +4,20 @@
             url("/images/bg-hero-mob@1x.webp") 1x,
             url("/images/bg-hero-mob@2x.webp") 2x
         );
+}
 
-    @media screen and (min-width: 768px) {
+@media (min-width: 768px) {
+    .hero {
         background-image: var(--overlay-50),
             image-set(
                 url("/images/bg-hero-tab@1x.webp") 1x,
                 url("/images/bg-hero-tab@2x.webp") 2x
             );
     }
+}
 
-    @media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
+    .hero {
         background-image: var(--overlay-50),
             image-set(
                 url("/images/bg-hero-desk@1x.webp") 1x,

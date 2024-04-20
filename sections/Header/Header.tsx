@@ -7,8 +7,8 @@ import useMedia from "use-media";
 import HeaderNavList from "@/components/HeaderNavList/HeaderNavList";
 
 export default function Header() {
-    const isMobile = useMedia({ maxWidth: "767px" });
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+    const isMobile = useMedia({ maxWidth: "767px" });
 
     useEffect(() => {
         function handleResize() {
@@ -33,7 +33,10 @@ export default function Header() {
     }, [isMobile, isMenuOpen]);
 
     const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+        if (isMobile) {
+            setIsMenuOpen(!isMenuOpen);
+        }
+        return;
     };
 
     return (
@@ -52,6 +55,7 @@ export default function Header() {
                 </Link>
 
                 <HeaderNavList
+                    screen={isMobile}
                     isMenuOpen={isMenuOpen}
                     toggleMenu={toggleMenu}
                 />
