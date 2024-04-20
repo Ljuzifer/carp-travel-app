@@ -1,6 +1,6 @@
-import { subTitleProps } from "@/utils/types";
+import { SubTitleProps } from "@/utils/types";
 
-export default function Subtitle({ caption, styles }: subTitleProps) {
+export default function Subtitle({ caption, styles }: SubTitleProps) {
     return (
         <h2 className={`subtitle ${styles}`}>
             {caption.primary}
