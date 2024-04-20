@@ -38,12 +38,15 @@ export default function Header() {
 
     return (
         <header className=' mx-auto bg-header-gradient'>
-            <div className='flex justify-between items-center py-9 px-5'>
+            <div
+                className='relative flex justify-between items-center py-9 px-5 mx-auto max-w-screen-lg-mob 
+                tab:px-8 tab:pt-[25px] tab:pb-[66px] tab:w-[768px] tab:max-w-screen-tab
+                desk:pl-6 desk:pr-[21px] desk:w-[1280px] desk:max-w-screen-desk'>
                 <Link href={"/"}>
                     <Image
                         src='/icons/logo.svg'
                         width={61}
-                        height={33}
+                        height={36}
                         alt='Carp Travel Logo'
                     />
                 </Link>
@@ -56,7 +59,7 @@ export default function Header() {
                 <button
                     type='button'
                     onClick={() => toggleMenu()}
-                    className='uppercase text-sm tracking-widest tab:hidden'>
+                    className='uppercase text-sm font-normal tracking-[1.4px] tab:hidden'>
                     menu
                 </button>
             </div>

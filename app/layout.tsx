@@ -9,6 +9,28 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "Carp Travel",
     description: "Uncover Carpathian's Secrets",
+    icons: [
+        {
+            url: "/icons/favicon-dark.svg",
+            media: "(prefers-color-scheme: dark)",
+            rel: "icon",
+            type: "image/svg",
+        },
+        {
+            url: "/icons/favicon-light.svg",
+            media: "(prefers-color-scheme: light)",
+            rel: "icon",
+            type: "image/svg",
+        },
+    ],
+    // openGraph: {
+    //     type: "website",
+    //     url: "https://carp-travel-app-ten.vercel.app/",
+    //     title: "Carp Travel",
+    //     description: "Uncover Carpathian's Secrets",
+    //     siteName: "Carp Travel",
+    //     images: [{ url: "/ogp/logo.jpg" }, { url: "/ogp/logo.png" }],
+    // },
 };
 
 export default function RootLayout({
@@ -17,7 +39,10 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang='en'>
+        <html
+            lang='en'
+            className='scroll-smooth'
+            style={{ scrollBehavior: "smooth" }}>
             <body className={inter.className}>
                 <Header />
                 {children}

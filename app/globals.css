@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --frontground-rgb: 255, 255, 255;
+    --frontcolor-rgb: 255, 255, 255;
     --background-rgb: 0, 0, 0;
 
     --overlay-50: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
@@ -23,74 +23,18 @@
 }
 
 body {
-    color: rgb(var(--frontground-rgb));
+    color: rgb(var(--frontcolor-rgb));
     background-color: rgb(var(--background-rgb));
 }
 
 .container {
     @apply mx-auto max-w-screen-lg-mob text-white
-  tab:max-w-screen-tab tab:w-[768px]
-  desk:max-w-screen-desk desk:w-[1280px];
+    tab:max-w-screen-tab tab:w-[768px]
+    desk:max-w-screen-desk desk:w-[1280px];
 }
 
 .subtitle {
-    @apply uppercase text-[40px] font-thin leading-[56px] tracking-[-1.6px];
-}
-
-.hero-button {
-    &::before {
-        content: "";
-
-        width: 42px;
-        height: 53px;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        background-image: url("/icons/mob-btn-fr-left.svg");
-        opacity: 1;
-
-        @media screen and (min-width: 768px) {
-            width: 35px;
-            height: 50px;
-
-            background-image: url("/icons/tab-btn-fr-left.svg");
-        }
-
-        @media screen and (min-width: 1280px) {
-            width: 44px;
-            height: 71px;
-
-            background-image: url("/icons/desk-btn-fr-left.svg");
-        }
-    }
-
-    &::after {
-        content: "";
-
-        width: 42px;
-        height: 53px;
-
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        background-image: url("/icons/mob-btn-fr-right.svg");
-        opacity: 1;
-
-        @media screen and (min-width: 768px) {
-            width: 35px;
-            height: 50px;
-
-            background-image: url("/icons/tab-btn-fr-right.svg");
-        }
-
-        @media screen and (min-width: 1280px) {
-            width: 44px;
-            height: 71px;
-
-            background-image: url("/icons/desk-btn-fr-right.svg");
-        }
-    }
+    @apply uppercase text-[40px] font-thin leading-[56px] tracking-[-1.6px] 
+    tab:text-[67px] tab:leading-[67px] tab:tracking-[-2.68px] 
+    desk:text-[98px] desk:tracking-[-3.92px] desk:leading-[98px];
 }
