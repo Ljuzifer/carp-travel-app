@@ -50,11 +50,24 @@ export type AboutData = {
 
 export interface OfferDetails {
     id: number;
-    bg: string;
+    class: string;
     image: string;
-    promo: string;
-    title: string;
+    slogan: string;
+    name: string;
     text: string;
 }
+
+export type OfferBadgeProps = {
+    slogan: string;
+    image: string;
+    name: string;
+    text: string;
+};
+
+export type OfferMenuProps = {
+    slideOrderNumber: number;
+    slogan: string;
+    onMenuSelect: (e: React.MouseEvent<HTMLLIElement>) => void;
+};
 
 // **** benefits ****

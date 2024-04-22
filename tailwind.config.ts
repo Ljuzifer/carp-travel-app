@@ -12,7 +12,7 @@ const config: Config = {
             backgroundImage: {
                 "header-gradient":
                     "linear-gradient(180deg, rgba(0, 24, 38, 0.5) 0%, rgba(0, 37, 49, 0.00) 100%)",
-                "service-select": 'url("/icons/service-select.svg")',
+                "offer-select": 'url("/icons/offer-select.svg")',
                 invalid: 'url("/icons/invalid.svg")',
             },
 

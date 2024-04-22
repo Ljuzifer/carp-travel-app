@@ -38,3 +38,9 @@ body {
     tab:text-[67px] tab:leading-[67px] tab:tracking-[-2.68px] 
     desk:text-[98px] desk:tracking-[-3.92px] desk:leading-[98px];
 }
+
+.active-offer {
+    @apply relative font-medium ml-[18px]
+  before:absolute before:left-[-18px] before:top-1/2 before:w-[9px] before:h-[9px] before:translate-y-[-50%] 
+  before:bg-offer-select cursor-pointer transition-all ease-in duration-500;
+}
