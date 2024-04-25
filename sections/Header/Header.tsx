@@ -3,12 +3,12 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import useMedia from "use-media";
+import { useMediaQuery } from "react-responsive";
 import HeaderNavList from "@/components/HeaderNavList/HeaderNavList";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-    const isMobile = useMedia({ maxWidth: "767px" });
+    const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
 
     useEffect(() => {
         function handleResize() {
@@ -36,13 +36,12 @@ export default function Header() {
         if (isMobile) {
             setIsMenuOpen(!isMenuOpen);
         }
-        return;
     };
 
     return (
         <header className=' mx-auto bg-header-gradient'>
             <div
-                className='relative flex justify-between items-center py-9 px-5 mx-auto max-w-screen-lg-mob 
+                className='flex justify-between items-center py-9 px-5 mx-auto max-w-screen-lg-mob 
                 tab:px-8 tab:pt-[25px] tab:pb-[66px] tab:w-[768px] tab:max-w-screen-tab
                 desk:pl-6 desk:pr-[21px] desk:w-[1280px] desk:max-w-screen-desk'>
                 <Link href={"/"}>

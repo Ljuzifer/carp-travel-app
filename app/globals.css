@@ -9,17 +9,6 @@
     --overlay-50: linear-gradient(rgba(2, 15, 8, 0.5), rgba(2, 15, 8, 0.5));
     --overlay-75: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
     --overlay-85: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.85));
-
-    --section-top-gradient: linear-gradient(
-        180deg,
-        #002426 0%,
-        rgba(0, 37, 49, 0) 100%
-    );
-    --section-bottom-gradient: linear-gradient(
-        0deg,
-        #002426 0%,
-        rgba(0, 37, 49, 0) 100%
-    );
 }
 
 body {
@@ -41,6 +30,27 @@ body {
 
 .active-offer {
     @apply relative font-medium ml-[18px]
-  before:absolute before:left-[-18px] before:top-1/2 before:w-[9px] before:h-[9px] before:translate-y-[-50%] 
-  before:bg-offer-select cursor-pointer transition-all ease-in duration-500;
+    before:absolute before:left-[-18px] before:top-1/2 before:w-[9px] before:h-[9px] before:translate-y-[-50%] 
+    before:bg-offer-select cursor-pointer transition-all ease-in duration-500;
+}
+
+.input-style {
+    @apply px-2 py-[2px] w-full block bg-white bg-opacity-5 text-white text-[13px] font-extralight leading-[24px]
+    outline-none focus:outline-none focus:bg-opacity-10 hover:bg-opacity-10
+    placeholder:text-white placeholder:opacity-[0.2]
+    tab:w-[222px] desk:w-[290px] desk:text-[20px] desk:leading-[24px]
+    transition-all ease-in duration-300;
+}
+
+.label-style {
+    @apply mb-[4px] text-xs font-extralight leading-[24px] tracking-[2.4px];
+}
+
+.validation-error {
+    @apply absolute bottom-[-24px] right-0 text-error text-xs font-extralight leading-[24px] tracking-[2.4px]
+    before:absolute before:w-[18px] before:h-[18px] before:left-[-22px] before:top-1/2 before:translate-y-[-50%] before:bg-invalid;
+}
+
+.invalid-input {
+    @apply text-error text-opacity-100 z-10;
 }

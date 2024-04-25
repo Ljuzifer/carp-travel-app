@@ -1,0 +1,87 @@
+.career {
+    background-image: var(--overlay-50),
+        image-set(
+            url("/images/bg-career-mob@1x.webp") 1x,
+            url("/images/bg-career-mob@2x.webp") 2x
+        );
+}
+
+@media (min-width: 768px) {
+    .career {
+        background-image: var(--overlay-75),
+            image-set(
+                url("/images/bg-career-tab@1x.webp") 1x,
+                url("/images/bg-career-tab@2x.webp") 2x
+            );
+    }
+}
+
+@media (min-width: 1280px) {
+    .career {
+        background-image: var(--overlay-75),
+            image-set(
+                url("/images/bg-career-desk@1x.webp") 1x,
+                url("/images/bg-career-desk@2x.webp") 2x
+            );
+    }
+}
+
+.career-mobile {
+    background-image: var(--overlay-75),
+        image-set(
+            url("/images/bg-career-mob@1x.webp") 1x,
+            url("/images/bg-career-mob@2x.webp") 2x
+        );
+}
+
+.policy-field {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.policy-checkbox {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    transition: all 300ms ease-in;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .policy-checkbox {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.policy-checkbox-empty {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 300ms ease-in, visibility 300ms ease-in;
+}
+
+.policy-checkbox-filled {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-in, visibility 300ms ease-in;
+}
+
+.policy-field:checked ~ .agreement > .policy-checkbox-empty {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.policy-field:checked ~ .agreement > .policy-checkbox-filled {
+    visibility: visible;
+    opacity: 1;
+}

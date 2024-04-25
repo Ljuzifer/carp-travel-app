@@ -23,14 +23,6 @@ export const metadata: Metadata = {
             type: "image/svg",
         },
     ],
-    // openGraph: {
-    //     type: "website",
-    //     url: "https://carp-travel-app-ten.vercel.app/",
-    //     title: "Carp Travel",
-    //     description: "Uncover Carpathian's Secrets",
-    //     siteName: "Carp Travel",
-    //     images: [{ url: "/ogp/logo.jpg" }, { url: "/ogp/logo.png" }],
-    // },
 };
 
 export default function RootLayout({
@@ -41,13 +33,26 @@ export default function RootLayout({
     return (
         <html
             lang='en'
-            // className='scroll-smooth'
+            className='scroll-smooth'
             style={{ scrollBehavior: "smooth" }}>
             <body className={inter.className}>
                 <Header />
                 {children}
 
-                <Toaster />
+                <Toaster
+                    position='top-center'
+                    reverseOrder={false}
+                    toastOptions={{
+                        style: {
+                            borderRadius: "8px",
+                            background: "#3a3838",
+                            color: "#f7f1f1",
+                            textShadow:
+                                "1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000",
+                        },
+                        duration: 2800,
+                    }}
+                />
             </body>
         </html>
     );

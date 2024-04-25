@@ -1,4 +1,4 @@
-.anderline::after {
+.under::after {
     content: "";
     position: absolute;
     left: 0;
@@ -11,8 +11,8 @@
     transition: transform 400ms ease-in;
 }
 
-.anderline:hover::after,
-.anderline:focus::after {
+.under:hover::after,
+.under:focus::after {
     transform: scaleX(1);
     transition: transform 400ms ease-in;
 }

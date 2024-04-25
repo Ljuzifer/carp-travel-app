@@ -34,6 +34,13 @@ const config: Config = {
             tab: "768px",
             desk: "1280px",
         },
+
+        colors: {
+            transparent: "transparent",
+            current: "currentColor",
+            error: "#FF5757",
+            white: "#FFFFFF",
+        },
     },
     plugins: [],
 };
