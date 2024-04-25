@@ -39,7 +39,7 @@ export default function Header() {
     };
 
     return (
-        <header className=' mx-auto bg-header-gradient'>
+        <header className=' mx-auto bg-header-gradient h-[105px]'>
             <div
                 className='flex justify-between items-center py-9 px-5 mx-auto max-w-screen-lg-mob 
                 tab:px-8 tab:pt-[25px] tab:pb-[66px] tab:w-[768px] tab:max-w-screen-tab
