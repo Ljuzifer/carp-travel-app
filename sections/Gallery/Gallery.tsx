@@ -9,13 +9,6 @@ import GalleryStaticList from "@/components/GalleryStaticList/GalleryStaticList"
 import GalleryImageSlider from "@/components/GalleryImageSlider/GalleryImageSlider";
 import GalleryNavSlider from "@/components/GalleryNavSlider/GalleryNavSlider";
 
-// import { galleryItems, gallerySectionTitle } from "@/utils/staticData/gallery";
-
-// import { SectionTitle } from "@/components/SectionTitle/SectionTitle";
-// import { GalleryMobile } from "@/components/GalleryMobile/GalleryMobile";
-// import { GallerySwiperNav } from "@/components/GallerySwiperNav/GallerySwiperNav";
-// import { GallerySwiperSlide } from "@/components/GallerySwiperSlide/GallerySwiperSlide";
-
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
@@ -56,14 +49,10 @@ export default function Gallery() {
                             className='h-[294px] desk:h-[429px] flex justify-center gap-[24px] relative'
                             loop={true}
                             loopPreventsSliding={true}
-                            // loopAddBlankSlides={true}
-                            // loopedslides={1}
-                            // loopAdditionalSlides={1}
                             grabCursor={true}
                             wrapperTag='ul'
                             centeredSlides={true}
                             slidesPerView={2}
-                            // slidesPerGroup={3}
                             speed={1800}
                             coverflowEffect={{
                                 rotate: 0,
