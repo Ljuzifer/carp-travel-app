@@ -4,6 +4,7 @@ const Hero = dynamic(() => import("../sections/Hero/Hero"));
 const About = dynamic(() => import("../sections/About/About"));
 const Offer = dynamic(() => import("../sections/Offer/Offer"));
 const Career = dynamic(() => import("../sections/Career/Career"));
+const Gallery = dynamic(() => import("../sections/Gallery/Gallery"));
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <About />
             <Offer />
             <Career />
+            <Gallery />
         </main>
     );
 }

@@ -174,3 +174,18 @@ export type CareerForm = {
     description: string;
     formContent: FormContent;
 };
+
+// **** gallery ****
+
+export type GalleryNavigationProps = {
+    sliderUpload: boolean;
+    prevButton: React.RefObject<HTMLButtonElement>;
+    nextButton: React.RefObject<HTMLButtonElement>;
+};
+
+export type GalleryImageProps = {
+    isActive: boolean;
+    image: string;
+};
+
+// **** contacts ****

@@ -1,0 +1,57 @@
+.gallery {
+    background-image: var(--section-top-gradient),
+        var(--section-bottom-gradient), var(--overlay-75),
+        image-set(
+            url("/images/bg-gallery-mob@1x.webp") 1x,
+            url("/images/bg-gallery-mob@2x.webp") 2x
+        );
+    background-size: 100% var(--section-gradient-height),
+        100% var(--section-gradient-height), 100% 100%, cover;
+    background-position: top, bottom, top, center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        background-image: var(--section-top-gradient),
+            var(--section-bottom-gradient), var(--overlay-85),
+            image-set(
+                url("/images/bg-gallery-tab@1x.webp") 1x,
+                url("/images/bg-gallery-tab@2x.webp") 2x
+            );
+        background-size: 100% var(--section-tab-gradient-height),
+            100% var(--section-tab-gradient-height), 100% 100%, cover;
+    }
+}
+
+@media (min-width: 1280px) {
+    .gallery {
+        background-image: var(--section-top-gradient),
+            var(--section-bottom-gradient), var(--overlay-85),
+            image-set(
+                url("/images/bg-gallery-desk@1x.webp") 1x,
+                url("/images/bg-gallery-desk@2x.webp") 2x
+            );
+    }
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    width: 415px;
+    height: 294px;
+}
+
+@media (min-width: 1280px) {
+    .swiper-slide {
+        width: 606px;
+        height: 429px;
+    }
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}

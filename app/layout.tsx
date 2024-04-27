@@ -45,7 +45,7 @@ export default function RootLayout({
                     toastOptions={{
                         style: {
                             borderRadius: "8px",
-                            background: "#3a3838",
+                            background: "#5a5a5a",
                             color: "#f7f1f1",
                             textShadow:
                                 "1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000",
