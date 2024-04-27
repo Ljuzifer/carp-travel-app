@@ -1,7 +1,11 @@
+"use client";
+
+import { Link } from "react-scroll";
 import { heroCredentials } from "@/data/hero";
-import "./Hero.css";
 import Subtitle from "@/components/Subtitle/Subtitle";
 import JoinButton from "@/components/JoinButton/JoinButton";
+
+import "./Hero.css";
 
 export default function Hero() {
     const { mainTitle, subTitle, description, towns } = heroCredentials;
@@ -21,8 +25,8 @@ export default function Hero() {
                     tab:w-[230px] tab:absolute tab:right-8 tab:top-0 desk:w-[305px] desk:right-6'>
                     <span
                         className='text-[37px] font-medium leading-9
-                            tab:text-[67px] tab:leading-[67px]
-                            desk:text-[98px] desk:leading-[98px]'>
+                        tab:text-[67px] tab:leading-[67px]
+                        desk:text-[98px] desk:leading-[98px]'>
                         {headline[0]}
                     </span>
                     <span
@@ -64,7 +68,14 @@ export default function Hero() {
                         {description}
                     </p>
 
-                    <JoinButton />
+                    <Link
+                        to='Contacts'
+                        spy={true}
+                        smooth={true}
+                        offset={40}
+                        duration={400}>
+                        <JoinButton />
+                    </Link>
                 </div>
             </div>
         </section>

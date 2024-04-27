@@ -189,3 +189,29 @@ export type GalleryImageProps = {
 };
 
 // **** contacts ****
+
+export type Contact = {
+    name: string;
+    contacts: string[];
+};
+
+export type Social = {
+    title: string;
+    link: string;
+};
+
+export type Socials = {
+    name: string;
+    contacts: Social[];
+};
+
+export type ContactData = {
+    subTitle: SubTitle;
+    phone: Contact;
+    email: Contact;
+    socials: Socials;
+};
+
+export type ContactForm = {
+    formContent: FormContent;
+};

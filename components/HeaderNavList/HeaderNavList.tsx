@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "react-scroll";
 import { useTransition, animated } from "@react-spring/web";
 import { MobileMenuProps } from "@/utils/types";
 import { navigation } from "@/data/navigation";
@@ -41,9 +41,13 @@ export default function HeaderNavList({
                                     {navigation.map((item) => (
                                         <li key={item}>
                                             <Link
-                                                href={`#${item}`}
+                                                to={item}
+                                                spy={true}
+                                                smooth={true}
+                                                offset={40}
+                                                duration={200}
                                                 onClick={() => toggleMenu()}
-                                                className='under relative capitalize'>
+                                                className='under relative capitalize cursor-pointer'>
                                                 {item}
                                             </Link>
                                         </li>
