@@ -40,9 +40,7 @@ export default function Career() {
 
     return (
         <>
-            <section
-                id='Career'
-                className='career relative bg-cover bg-no-repeat bg-center'>
+            <section id='Career' className='career relative'>
                 <div
                     className='container px-[20px] py-[56px] relative z-10
                         tab:px-8 tab:py-16 desk:py-[104px] 
@@ -62,9 +60,7 @@ export default function Career() {
             </section>
 
             {isMobile && (
-                <section
-                    id='Career'
-                    className='career relative career-mob bg-cover bg-no-repeat bg-center'>
+                <section id='Career' className='career relative '>
                     <div className='container relative px-[20px] py-[56px] z-10'>
                         <CareerForm />
                     </div>

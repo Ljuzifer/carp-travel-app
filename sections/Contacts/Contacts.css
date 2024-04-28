@@ -1,33 +1,33 @@
 .contacts {
-    background-image: var(--section-top-gradient),
-        var(--section-bottom-gradient), var(--overlay-75),
+    background-image: var(--overlay-75), var(--section-top-gradient),
+        var(--section-bottom-gradient),
         image-set(
             url("/images/bg-contacts-mob@1x.webp") 1x,
             url("/images/bg-contacts-mob@2x.webp") 2x
         );
-    background-size: 100% var(--section-gradient-height),
-        100% var(--section-gradient-height), 100% 100%, cover;
-    background-position: top, bottom, top, center;
+    background-size: 100% 100%, 100% var(--section-gradient-height),
+        100% var(--section-gradient-height), cover;
+    background-position: top, top, bottom, center;
     background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
     .contacts {
-        background-image: var(--section-top-gradient),
-            var(--section-bottom-gradient), var(--overlay-75),
+        background-image: var(--overlay-75), var(--section-top-gradient),
+            var(--section-bottom-gradient),
             image-set(
                 url("/images/bg-contacts-tab@1x.webp") 1x,
                 url("/images/bg-contacts-tab@2x.webp") 2x
             );
-        background-size: 100% var(--section-tab-gradient-height),
-            100% var(--section-tab-gradient-height), 100% 100%, cover;
+        background-size: 100% 100%, 100% var(--section-tab-gradient-height),
+            100% var(--section-tab-gradient-height), cover;
     }
 }
 
 @media (min-width: 1280px) {
     .contacts {
-        background-image: var(--section-top-gradient),
-            var(--section-bottom-gradient), var(--overlay-75),
+        background-image: var(--overlay-75), var(--section-top-gradient),
+            var(--section-bottom-gradient),
             image-set(
                 url("/images/bg-contacts-desk@1x.webp") 1x,
                 url("/images/bg-contacts-desk@2x.webp") 2x

@@ -10,6 +10,8 @@
     --overlay-75: linear-gradient(rgba(2, 15, 8, 0.75), rgba(2, 15, 8, 0.75));
     --overlay-85: linear-gradient(rgba(2, 15, 8, 0.85), rgba(2, 15, 8, 0.85));
 
+    --section-hero-gradient-height: 288px;
+    --section-offer-gradient-height: 291px;
     --section-gradient-height: 247px;
     --section-tab-gradient-height: 302px;
 
@@ -28,6 +30,21 @@
 body {
     color: rgb(var(--frontcolor-rgb));
     background-color: rgb(var(--background-rgb));
+}
+
+/* chrome */
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* firefox */
+html {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
 }
 
 .container {

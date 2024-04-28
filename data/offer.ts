@@ -16,7 +16,7 @@ export const offerLabels: string[] = [
 export const offerCredentials: OfferDetails[] = [
     {
         id: 1,
-        class: "minislide-1",
+        class: "largeslide-1",
         image: "/images/offer-1@2x.webp",
         slogan: "Feel the adrenaline rush",
         name: "ATVs Traveling",
@@ -24,7 +24,7 @@ export const offerCredentials: OfferDetails[] = [
     },
     {
         id: 2,
-        class: "minislide-2",
+        class: "largeslide-2",
         image: "/images/offer-2@2x.webp",
         slogan: "Destroy your limitations",
         name: "Rock climbing",
@@ -32,7 +32,7 @@ export const offerCredentials: OfferDetails[] = [
     },
     {
         id: 3,
-        class: "minislide-3",
+        class: "largeslide-3",
         image: "/images/offer-3@2x.webp",
         slogan: "Get Inspired",
         name: "Hot air ballooning",
@@ -40,7 +40,7 @@ export const offerCredentials: OfferDetails[] = [
     },
     {
         id: 4,
-        class: "minislide-4",
+        class: "largeslide-4",
         image: "/images/offer-4@2x.webp",
         slogan: "Overcome your fears",
         name: "Skydiving",
@@ -48,7 +48,7 @@ export const offerCredentials: OfferDetails[] = [
     },
     {
         id: 5,
-        class: "minislide-5",
+        class: "largeslide-5",
         image: "/images/offer-5@2x.webp",
         slogan: "Trust the flow",
         name: "Rafting",

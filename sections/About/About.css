@@ -1,24 +1,28 @@
 .about {
-    background-image: var(--overlay-50),
+    background-image: var(--section-top-gradient), var(--overlay-50),
         image-set(
             url("/images/bg-about-mob@1x.webp") 1x,
             url("/images/bg-about-mob@2x.webp") 2x
         );
+    background-size: 100% var(--section-gradient-height), 100% 100%, cover;
+    background-position: top, top, center;
+    background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .about {
-        background-image: var(--overlay-50),
+        background-image: var(--section-top-gradient), var(--overlay-50),
             image-set(
                 url("/images/bg-about-tab@1x.webp") 1x,
                 url("/images/bg-about-tab@2x.webp") 2x
             );
+        background-size: 100% var(--section-gradient-height), 100% 100%, cover;
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1280px) {
     .about {
-        background-image: var(--overlay-50),
+        background-image: var(--section-top-gradient), var(--overlay-50),
             image-set(
                 url("/images/bg-about-desk@1x.webp") 1x,
                 url("/images/bg-about-desk@2x.webp") 2x

@@ -1,24 +1,28 @@
 .hero {
-    background-image: var(--overlay-50),
+    background-image: var(--section-top-gradient), var(--overlay-50),
         image-set(
             url("/images/bg-hero-mob@1x.webp") 1x,
             url("/images/bg-hero-mob@2x.webp") 2x
         );
+    background-size: 100% var(--section-hero-gradient-height), 100% 100%, cover;
+    background-position: top, top, center;
+    background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
     .hero {
-        background-image: var(--overlay-50),
+        background-image: var(--section-top-gradient), var(--overlay-50),
             image-set(
                 url("/images/bg-hero-tab@1x.webp") 1x,
                 url("/images/bg-hero-tab@2x.webp") 2x
             );
+        background-size: 100% var(--section-gradient-height), 100% 100%, cover;
     }
 }
 
 @media (min-width: 1280px) {
     .hero {
-        background-image: var(--overlay-50),
+        background-image: var(--section-top-gradient), var(--overlay-50),
             image-set(
                 url("/images/bg-hero-desk@1x.webp") 1x,
                 url("/images/bg-hero-desk@2x.webp") 2x

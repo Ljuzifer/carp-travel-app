@@ -31,14 +31,14 @@ export default function Hero() {
                     </span>
                     <span
                         className='text-[37px] font-thin tracking-[1.665px] leading-9
-                            tab:text-[67px] tab:leading-[67px] tab:tracking-[6.7px]
-                            desk:text-[98px] desk:leading-[98px] desk:tracking-[1px]'>
+                        tab:text-[67px] tab:leading-[67px] tab:tracking-[6.7px]
+                        desk:text-[98px] desk:leading-[98px] desk:tracking-[1px]'>
                         {headline[1]}
                     </span>
                     <span
                         className='relative right-[-5px] text-xs font-light tracking-[9.48px] leading-3
-                            tab:right-[-20px] tab:text-sm tab:leading-3 tab:tracking-[25.9px] 
-                            desk:right-[-30px] desk:text-base desk:leading-4 desk:tracking-[36.48px]'>
+                        tab:right-[-20px] tab:text-sm tab:leading-3 tab:tracking-[25.9px] 
+                        desk:right-[-30px] desk:text-base desk:leading-4 desk:tracking-[36.48px]'>
                         {headline[2]}
                     </span>
                 </h1>
@@ -59,8 +59,8 @@ export default function Hero() {
                 </p>
                 <div
                     className='w-[280px] 
-                        tab:w-[230px] tab:absolute tab:bottom-16 tab:right-8
-                        desk:w-[294px] desk:bottom-20 desk:right-6'>
+                    tab:w-[230px] tab:absolute tab:bottom-16 tab:right-8
+                    desk:w-[294px] desk:bottom-20 desk:right-6'>
                     <p
                         className='font-extralight text-justify text-sm leading-[20px] mb-[24px] 
                         tab:mb-7 tab:text-base tab:leading-[20px]

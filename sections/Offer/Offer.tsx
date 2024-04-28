@@ -4,14 +4,14 @@ import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade } from "swiper/modules";
 import { animated, useTransition } from "@react-spring/web";
-
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "./Offer.css";
 import { subTitle, offerLabels, offerCredentials } from "@/data/offer";
 import Subtitle from "@/components/Subtitle/Subtitle";
 import OfferBadge from "@/components/OfferBadge/OfferBadge";
 import OfferMenu from "@/components/OfferMenu/OfferMenu";
+
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "./Offer.css";
 
 export default function Offer() {
     const [slideOrderNumber, setSlideOrderNumber] = useState<number>(1);
@@ -45,7 +45,7 @@ export default function Offer() {
 
         const currentItemId = currentItemIndex + 1;
         const currentSlide = offerCredentials.find(
-            (s) => s.id === currentItemId
+            (slide) => slide.id === currentItemId
         );
 
         setSlideOrderNumber(currentItemId);

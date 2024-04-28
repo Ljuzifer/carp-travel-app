@@ -11,8 +11,8 @@ export default function About() {
             className='about relative bg-cover bg-no-repeat bg-center'>
             <div
                 className='container relative px-5 py-[55px]
-                    tab:px-8 tab:py-16 tab:h-[697px]
-                    desk:px-6 desk:py-[104px] desk:h-[824px]'>
+                tab:px-8 tab:py-16 tab:h-[697px]
+                desk:px-6 desk:py-[104px] desk:h-[824px]'>
                 <Subtitle caption={subTitle} styles='mb-[8px]' />
 
                 <div
@@ -35,23 +35,23 @@ export default function About() {
 
                 <div
                     className='ml-auto mb-10 w-[180px] text-sm font-normal leading-5
-                        tab:mb-0 tab:w-[221px] tab:absolute tab:bottom-[188px] tab:left-8 tab:text-base tab:leading-[20px]
-                        desk:w-[296px] desk:bottom-[104px] desk:right-6 desk:text-lg desk:leading-6'>
+                    tab:mb-0 tab:w-[221px] tab:absolute tab:bottom-[188px] tab:left-8 tab:text-base tab:leading-[20px]
+                    desk:w-[296px] desk:bottom-[104px] desk:right-6 desk:text-lg desk:leading-6'>
                     <span className='block uppercase'>{banner.from}</span>
                     <span className='block uppercase text-right'>
                         {banner.to}
                     </span>
                     <span
                         className='mr-[-15px] block font-extralight tracking-[-0.14px] 
-                            tab:tracking-[0.32px] desk:mr-[-20px] desk:tracking-[2.16px]'>
+                        tab:tracking-[0.32px] desk:mr-[-20px] desk:tracking-[2.16px]'>
                         {banner.offer}
                     </span>
                 </div>
 
                 <p
                     className='text-sm font-extralight leading-5
-                        tab:w-[463px] tab:absolute tab:bottom-16 tab:right-8 tab:text-base tab:leading-[20px]
-                        desk:w-[605px] desk:bottom-[104px] desk:left-6 desk:text-lg desk:leading-6'>
+                    tab:w-[463px] tab:absolute tab:bottom-16 tab:right-8 tab:text-base tab:leading-[20px]
+                    desk:w-[605px] desk:bottom-[104px] desk:left-6 desk:text-lg desk:leading-6'>
                     <span className='font-medium'>
                         {description[2].primary}
                     </span>
