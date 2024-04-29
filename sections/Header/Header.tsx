@@ -9,17 +9,15 @@ import HeaderNavList from "@/components/HeaderNavList/HeaderNavList";
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+    const isTablet = useMediaQuery({ query: "(min-width: 768px)" });
 
     useEffect(() => {
-        function handleResize() {
-            const mobile = window.matchMedia("(max-width: 767px)").matches;
-            setIsMenuOpen(!mobile);
+        if (isTablet) {
+            setIsMenuOpen(true);
+            return;
         }
-
-        window.addEventListener("resize", handleResize);
-        handleResize();
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+        setIsMenuOpen(false);
+    }, [isTablet]);
 
     useEffect(() => {
         if (isMobile && isMenuOpen) {

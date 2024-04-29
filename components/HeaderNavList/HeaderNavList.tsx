@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import { useTransition, animated } from "@react-spring/web";
 import { MobileMenuProps } from "@/utils/types";
 import { navigation } from "@/data/navigation";
+
 import "./HeaderNavList.css";
 
 export default function HeaderNavList({
